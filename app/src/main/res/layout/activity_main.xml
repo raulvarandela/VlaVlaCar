@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+
+    <!--Primer layout para el consumo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+        <EditText
+            android:id="@+id/consumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="l/100Km" />
+
+
+    </LinearLayout>
+
+    <!--segundo layout para los km-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+        <EditText
+            android:id="@+id/km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Km" />
+
+    </LinearLayout>
+
+
+    <!--tercero para el tipo de carretera-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+        <EditText
+            android:id="@+id/carretera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="A/N/C" />
+
+
+    </LinearLayout>
+
+
+    <!--cuarto para las horas y minutos-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+        <EditText
+            android:id="@+id/horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="left"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="h" />
+
+        <EditText
+            android:id="@+id/minutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="left"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="m" />
+
+
+    </LinearLayout>
+
+
+    <!--botones-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+
+        <ImageButton
+            android:id="@+id/botonTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:src="@drawable/ic_crono" />
+
+        <ImageButton
+            android:id="@+id/botonConsumo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:src="@drawable/ic_gasolinera" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
